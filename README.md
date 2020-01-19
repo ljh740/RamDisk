@@ -9,7 +9,7 @@ osx自定义内存缓存盘
 sudo chmod a+x login.sh
 sudo chmod a+x logout.sh
 
-defaults write com.apple.loginwindow LoginHook ~/ramdisk/login.sh
-defaults write com.apple.loginwindow LogoutHook ~/ramdisk/logout.sh
+sudo defaults write com.apple.loginwindow LoginHook ~/ramdisk/login.sh
+sudo defaults write com.apple.loginwindow LogoutHook ~/ramdisk/logout.sh
 ```
 
