@@ -2,13 +2,14 @@
                                                             
 DISK_NAME=RamDisk
 MOUNT_PATH=/Volumes/$DISK_NAME
-WORK_PATH=/Users/darkedge/ramdisk/bak
+WORK_PATH=$PWD/ramdisk/bak
 BAK_PATH=$WORK_PATH/$DISK_NAME.tar.gz
 LISTFILE=$WORK_PATH/list
 #设置最大的cache大小(字节)
 MAX_CACHE_SIZE=100
 #
 cd $MOUNT_PATH
+mkdir -p $WORK_PATH
 declare -a fa
 i=0
 for file in $(du -s Caches/* | sort -n)

@@ -5,7 +5,7 @@ DISK_NAME=RamDisk
 # 磁盘路径
 MOUNT_PATH=/Volumes/$DISK_NAME
 # 备份路径
-BAK_PATH=/Users/darkedge/ramdisk/bak/$DISK_NAME.tar.gz
+BAK_PATH=$PWD/ramdisk/bak/$DISK_NAME.tar.gz
 # 磁盘大小，单位GB
 DISK_SPACE=8
 if [ ! -e $MOUNT_PATH ] ; then

@@ -2,9 +2,14 @@
 osx自定义内存缓存盘
 
 # 使用
-修改配置文件里面的路径
+将脚本复制到~/ramdisk 下
+
 执行 
 ```
 sudo chmod a+x login.sh
 sudo chmod a+x logout.sh
+
+defaults write com.apple.loginwindow LoginHook ~/ramdisk/login.sh
+defaults write com.apple.loginwindow LogoutHook ~/ramdisk/logout.sh
 ```
+
